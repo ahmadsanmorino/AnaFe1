@@ -5,24 +5,24 @@ This template is useful for studies related to feature selection, classification
 ## Description
 
 There are three feature selection mechanisms available:
-1. Extra Tree Classifier (To get Information Gain from each feature)
-2. Chi-Square (To measure how strong the relationship between features)
-3. Correlation Coefficient (To shows the correlation between features)
+* Extra Tree Classifier (To get Information Gain from each feature)
+* Chi-Square (To measure how strong the relationship between features)
+* Correlation Coefficient (To shows the correlation between features)
 You can use one of them, or combine the three mechanisms to get the best selection results
 
 We provide four ready-to-use machine-learning classifiers to be analyzed:
-1. Support Vector Machine
-2. Random Forest
-3. Multilayer Perceptron
-4. Logistic Regression
+* Support Vector Machine
+* Random Forest
+* Multilayer Perceptron
+* Logistic Regression
 
 There are several options for machine learning-based analysis:
-1. Confusion-matrix table
-2. Accuracy
-3. Precision
-4. Sensitivity
-5. f1-score
-6. Receiver Operating Characteristic Curve
+* Confusion-matrix table
+* Accuracy
+* Precision
+* Sensitivity
+* f1-score
+* Receiver Operating Characteristic Curve
 The analysis's results are presented in tables and graphs for easy comprehension.
 
 ## Getting Started
@@ -30,7 +30,7 @@ The analysis's results are presented in tables and graphs for easy comprehension
 ### Dependencies
 
 To start trying this template, you'll need to prepare a few things on your computer:
-* Anaconda Individual Edition [See Windows(64bit](https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-2021.05-Windows-x86_64.exe-hash/), [MacOS](https://docs.anaconda.com/anaconda/install/mac-os/), and [Linux](https://docs.anaconda.com/anaconda/install/linux/)).
+* Anaconda Individual Edition [See Windows 64bit](https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-2021.05-Windows-x86_64.exe-hash/), [MacOS](https://docs.anaconda.com/anaconda/install/mac-os/), and [Linux](https://docs.anaconda.com/anaconda/install/linux/)).
 * Python3
 
 ## System requirements
@@ -46,8 +46,7 @@ Just download the code and dataset from https://github.com/ahmadsanmorino/AnaFe1
 
 ## Authors
 
-Ahmad Sanmorino  
-ex. [@sanmorino](sanmorino@uigm.ac.id)
+Ahmad Sanmorino
 
 ## Version History
 
@@ -58,4 +57,4 @@ ex. [@sanmorino](sanmorino@uigm.ac.id)
 
 ## License
 
-This project is licensed under the [MIT] License - see the LICENSE.md file for details
+This project is licensed under the [MIT] License - see the [LICENSE.md](https://github.com/ahmadsanmorino/AnaFe1/blob/main/LICENSE) file for details
