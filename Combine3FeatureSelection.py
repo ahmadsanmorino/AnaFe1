@@ -21,8 +21,8 @@ from sklearn.feature_selection import chi2
 # Read dataset from csv file
 data = pd.read_csv("dataset.csv")
 
-X = data.iloc[:,0:11]  #independent columns
-y = data.iloc[:,-1]    #dependent columns
+X = data.iloc[:,0:12]  # columns for independent features
+y = data.iloc[:,-1]    # column for dependent feature
 
 # 1st mechanism: Extra Tree Classifier
 
