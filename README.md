@@ -5,13 +5,13 @@ This template is useful for studies related to feature selection, classification
 ## Description
 
 There are three combined feature selection mechanisms:
-* Extra Tree Classifier (To get Information Gain from each feature)
+* Extra Tree (To get Information Gain from each feature)
 * Chi-Square (To measure how strong the relationship between features)
 * Correlation Coefficient (To shows the correlation between features)
 
 You can use one of them, but I suggest combining the three mechanisms is the right choise to get the best results 
 
-We also provide ready-to-use machine-learning classifiers to be analyzed:
+We also provide other ready-to-use machine-learning classifiers to be analyzed:
 * Support Vector Machine
 * Random Forest
 * Multilayer Perceptron
