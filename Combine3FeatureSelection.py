@@ -1,6 +1,6 @@
 
 # Typically, feature selection occurs after data preprocessing. 
-# The process of selecting the best feature is known as feature selection. 
+# The process of selecting the best feature from a set of features
 
 # In this template, we combine three mechanisms:
 # Extra Tree Classifier (To get Information Gain from each feature)
