@@ -8,6 +8,7 @@ There are three feature selection mechanisms available:
 * Extra Tree Classifier (To get Information Gain from each feature)
 * Chi-Square (To measure how strong the relationship between features)
 * Correlation Coefficient (To shows the correlation between features)
+
 You can use one of them, or combine the three mechanisms to get the best selection results
 
 We provide four ready-to-use machine-learning classifiers to be analyzed:
@@ -22,7 +23,8 @@ There are several options for machine learning-based analysis:
 * Precision
 * Sensitivity
 * f1-score
-* Receiver Operating Characteristic Curve
+* Receiver Operating Characteristic Curve.
+
 The analysis's results are presented in tables and graphs for easy comprehension.
 
 ## Getting Started
