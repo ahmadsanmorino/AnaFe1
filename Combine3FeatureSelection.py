@@ -3,7 +3,7 @@
 # The process of selecting the best feature from a set of features
 
 # In this template, we combine three mechanisms:
-# Extra Tree Classifier (To get Information Gain from each feature)
+# Extra Tree (To get Information Gain from each feature)
 # Chi-Square (To measure how strong the relationship between features)
 # Correlation Coefficient (To shows the correlation between features)
 
@@ -68,5 +68,60 @@ plt.figure(figsize=(10,8))
 # Display correlation score each feature in the heat map
 g=sns.heatmap(data[correlation_score].corr(),annot=True,cmap="PiYG")
 plt.show()
+
+# Selected features are tested using machine learning classifier
+
+X = dataset.drop('TARGET', axis=1)
+y = dataset['TARGET']
+
+# Split dataset: Training set & Testing set (70:30)
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.30)
+
+# Decision Tree Classifier
+from sklearn import tree
+dtc = tree.DecisionTreeClassifier()
+dtc.fit(X_train, y_train)
+
+y_pred = dtc.predict(X_test)
+
+from sklearn.metrics import classification_report, confusion_matrix
+
+#Display confusion-matrix percentage in heat map
+matrix_table = confusion_matrix(y_test,y_pred)
+print(matrix_table)
+
+sns.heatmap(matrix_table, annot=True)
+
+sns.heatmap(matrix_table/np.sum(matrix_table), annot=True, 
+            fmt='.2%', cmap='Oranges')
+plt.show()
+
+# RF Classification report (Accuracy, Precision, Sensitivity, f1-score) 
+print(classification_report(y_test,y_pred))
+
+# Receiver Operating Characteristic Curve (ROC)
+
+from sklearn.metrics import roc_curve
+from sklearn.metrics import roc_auc_score
+
+def plot_roc_curve(fpr, tpr):
+    plt.plot(fpr, tpr, color='red', label='ROC')
+    plt.plot([0, 1], [0, 1], color='darkblue', linestyle='--')
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('RF Receiver Operating Characteristic Curve')
+    plt.legend()
+    plt.show()
+
+y_pred = y_pred[:, 1]
+
+# Display area under the curve score (AUC Score)
+auc = roc_auc_score(y_test, y_pred)
+print('AUC: %.2f' % auc)
+
+fpr, tpr, thresholds = roc_curve(y_test, y_pred)
+
+plot_roc_curve(fpr, tpr)
 
 #END
