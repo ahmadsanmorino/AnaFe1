@@ -9,7 +9,7 @@ There are three combined feature selection mechanisms:
 * Chi-Square (To measure how strong the relationship between features)
 * Correlation Coefficient (To shows the correlation between features)
 
-You can use one of them, but I suggest combining the three mechanisms is the right choise to get the best results 
+You can use one of them, but I suggest combining the three mechanisms is the right choice to get the best results 
 
 We also provide other ready-to-use machine-learning classifiers to be analyzed:
 * Support Vector Machine
