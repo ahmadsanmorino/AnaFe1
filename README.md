@@ -32,7 +32,7 @@ The analysis's results are presented in tables and graphs for easy comprehension
 ### Dependencies
 
 To start trying this template, you'll need to prepare a few things on your computer:
-* Anaconda Individual Edition [See Windows 64bit](https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-2021.05-Windows-x86_64.exe-hash/), [MacOS](https://docs.anaconda.com/anaconda/install/mac-os/), and [Linux](https://docs.anaconda.com/anaconda/install/linux/)).
+* Anaconda Individual Edition [See Windows 64bit](https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-2021.05-Windows-x86_64.exe-hash/), [MacOS](https://docs.anaconda.com/anaconda/install/mac-os/), and [Linux](https://docs.anaconda.com/anaconda/install/linux/).
 * Python3
 
 ## System requirements
