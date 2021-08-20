@@ -1,62 +1,61 @@
-# Project Title
+# AnaFe: A template for features selection and machine learning-based analysis
 
-Simple overview of use/purpose.
+This template is useful for studies related to feature selection, classification, and machine learning-base analysis
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+There are three feature selection mechanisms available:
+1. Extra Tree Classifier (To get Information Gain from each feature)
+2. Chi-Square (To measure how strong the relationship between features)
+3. Correlation Coefficient (To shows the correlation between features)
+You can use one of them, or combine the three mechanisms to get the best selection results
+
+We provide four ready-to-use machine-learning classifiers to be analyzed:
+1. Support Vector Machine
+2. Random Forest
+3. Multilayer Perceptron
+4. Logistic Regression
+
+There are several options for machine learning-based analysis:
+1. Confusion-matrix table
+2. Accuracy
+3. Precision
+4. Sensitivity
+5. f1-score
+6. Receiver Operating Characteristic Curve
+The analysis's results are presented in tables and graphs for easy comprehension.
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+To start trying this template, you'll need to prepare a few things on your computer:
+* Anaconda Individual Edition [See Windows(64bit](https://docs.anaconda.com/anaconda/install/hashes/Anaconda3-2021.05-Windows-x86_64.exe-hash/), [MacOS](https://docs.anaconda.com/anaconda/install/mac-os/), and [Linux](https://docs.anaconda.com/anaconda/install/linux/)).
+* Python3
+
+## System requirements
+
+* Operating system: Windows 8 or newer, 64-bit macOS 10.13+, or Linux, including Ubuntu, RedHat, CentOS 7+, and others.
+* If your operating system is older than what is currently supported, you can find older versions of the Anaconda installers in our archive that might work for you. 
+* System architecture: Windows- 64-bit x86, 32-bit x86; MacOS- 64-bit x86; Linux- 64-bit x86, 64-bit aarch64 (AWS Graviton2 / arm64), 64-bit Power8/Power9, s390x (Linux on IBM Z & LinuxONE).
+* Minimum 5 GB disk space to download and install.
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Just download the code and dataset from https://github.com/ahmadsanmorino/AnaFe1, and run it on Anaconda Prompt or Jupyter Notebook. 
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Ahmad Sanmorino  
+ex. [@sanmorino](sanmorino@uigm.ac.id)
 
 ## Version History
 
-* 0.2
+* 1.0
     * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
+* 0.5
     * Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+This project is licensed under the [MIT] License - see the LICENSE.md file for details
